@@ -1,0 +1,30 @@
+{
+  "name": "daviswwang/laravel-log",
+  "description": "laravel log mysql sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "daviswwang",
+      "email": "130086230@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Daviswwang\\LaravelLog\\": "./src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Daviswwang\\LaravelLog\\LaravelServiceProvider"
+      ]
+    },
+    "aliases": {
+      "LaravelLog": "Daviswwang\\LaravelLog\\Facades\\LaravelLog"
+    }
+
+  }
+}
